@@ -5,11 +5,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Lucene.Net" Version="4.8.0-beta00005" />
+    <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00005" />
+    <PackageReference Include="Lucene.Net.Expressions" Version="4.8.0-beta00005" />
+    <PackageReference Include="Lucene.Net.QueryParser" Version="4.8.0-beta00005" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PanGu.Core\PanGu.Core.csproj" />
+    <ProjectReference Include="..\PanGu.HighLight\PanGu.HighLight.csproj" />
+    <ProjectReference Include="..\PanGu.Lucene.Analyzer\PanGu.Lucene.Analyzer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AppData\" />
+    <Folder Include="wwwroot\ArticlesIndex\" />
   </ItemGroup>
 
 </Project>
